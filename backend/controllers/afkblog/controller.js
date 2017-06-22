@@ -24,7 +24,7 @@ controller.index=(req,res)
     const contents = body.contents;
 
     afkBlog
-      .create(post, featured_image, image1, image2, image3)
+      .create(post, featured_image, image1, image2, image3, contents)
       .then((data)=>{
         console.log(data);
         res.json(data);
