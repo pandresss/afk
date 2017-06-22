@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+// import App from './components/App';
+import Router from './router';
+
+// ReactDOM.render(
+//   <App />,
+//   document.querySelector('#root')
+//   )
 
 ReactDOM.render(
-  <App />,
-  document.querySelector('#root')
-  )
+  Router,
+  document.getElementById('root')
+);
