@@ -52,7 +52,8 @@ class BlogPosts extends Component {
           <Post post={this.state.currentPost}/>
         </div>
         <div className="posts">
-          {this.renderPosts()}
+          // {this.renderPosts()}
+          <BlogPosts posts={this.state.posts} selectPost={this.selectPost.bind(this)}/>
         </div>
       </div>
     );
