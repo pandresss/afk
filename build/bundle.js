@@ -9819,7 +9819,13 @@ var App = function (_Component) {
   function App() {
     _classCallCheck(this, App);
 
-    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+
+    _this.state = {
+      posts: null,
+      current: null
+    };
+    return _this;
   }
 
   _createClass(App, [{
@@ -9832,6 +9838,16 @@ var App = function (_Component) {
           'h3',
           null,
           ' Test '
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'currentPost' },
+          ' Current post'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'posts' },
+          ' list of posts'
         )
       );
     }
@@ -26335,7 +26351,7 @@ var About = function (_Component) {
         _react2.default.createElement(
           'h3',
           null,
-          ' about '
+          ' about us'
         )
       );
     }
